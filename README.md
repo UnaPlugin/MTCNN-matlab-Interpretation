@@ -21,7 +21,7 @@ Interpretation of the MTCNN (2016) codes in matlab.
     	minl=min([w h]);			%%短边，假设480x640则为480
     	img=single(img);
     	if fastresize
-    		im_data=(single(img)-127.5)*0.0078125;	//映射至-1~1
+    		im_data=(single(img)-127.5)*0.0078125;	%%映射至-1~1
     	end
     	m=12/minsize;				%%12÷40=0.3
     	minl=minl*m;				%%480x0.3=144
